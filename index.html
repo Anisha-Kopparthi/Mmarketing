@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: black;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+/*  */
+
+article {
+  float: left;
+  padding: 20px;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: rgb(85, 183, 222);
+}
+
+h3{
+    padding-left: 150px;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        </ul>
+</nav>
+<h1>M Marketing</h1>
+<h3>We Brand You</h3>
+
+
+<header>
+    <a href="default.asp">
+        <img src="image.jpg" alt="HTML tutorial" style="width:720px;height:250px;">
+        </a>
+</header>
+
+<section>
+  
+  
+  <article>
+    <h5>It keeps consumers aware of the latest updates</h5>
+    <p>Digital marketing is a strategy that allows a company to keep consumers aware of the latest updates to products and services. This is done using different channels, including social media, email marketing, and search engine optimization (SEO). This keeps your company in people’s thoughts and prompts potential buying decisions.</p>
+
+    <h5>It’s quick and convenient</h5>
+    <p>Digital marketing is a very convenient way for customers to interact with companies. Customers can use digital marketing to compare prices, check in-store availability, and make immediate purchases. It also allows you to put your message across, and share crucial information that is useful to the customer.</p>
+
+    <h5>It helps build a better relationship</h5>
+    <p>It is important to understand that digital marketing is not just about building a website and generating traffic. It is also about building a good relationship with the customer and establishing trust. By providing them with information, educating them on your product or service, and giving them a way to give feedback to you and communicate with you, relationships are developed and strengthened.</p>
+
+    <h5>It provides 24/7 access</h5>
+    <p>The internet offers potential customers convenience of time, too. Digital marketing allows them to connect with you, your products, and services at any time of the day ─ and that’s great news for all.</p>
+
+    <h5>It creates a personalized experience</h5>
+    <p>Digital marketers can create personalized experiences for customers using digital channels. This includes websites, mobile apps, social media, email campaigns, and more. How do you do this? Collect information about your customers through surveys, social media, and personal interactions. Then use this to segment your customers, and thus create individualized marketing campaigns that will resonate with the customers’ needs and wants.</p>
+
+    <h5>It provides your audience with options</h5>
+    <p>Digital marketing provides your audience with options. It gives them the opportunity to choose how they want to be marketed, based on their personal preferences and interests. And when you market to a customer the way they prefer being marketed to, the customer is more likely to engage with you.</p>
+
+    <h5>Customers obtain quality content</h5>
+    <p>What do customers go online for? A major goal of being online is to find quality content ─ engaging, entertaining, and informative content that is relevant to the customer’s needs. Such content will help your company stand out from competitors. For example, creating a blog post once a week with valuable information on your industry will keep customers coming back for more.</p>
+
+    <h5>It helps you reach a wider audience</h5>
+    <p>Digital marketing helps you reach a wider audience and create awareness for your product or service. Because of its relatively low cost and high ROI, and because your content and digital assets are easily and conveniently accessible, a customer can now interact with you from anywhere on the planet. This means that the best product or service to suit any budget is available, irrespective of where the customer is located.</p>
+  </article>
+</section>
+
+
+
+</body>
+</html>
+
